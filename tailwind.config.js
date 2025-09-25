@@ -23,8 +23,13 @@ export default {
                 'semibold': '500',
                 'bold': '700',
             },
+            fontSize: {
+                'xxs': '0.65rem',
+                'xxxs': '0.55rem',
+            },
             screens: {
                 mobile: '375px',
+                tablet: '700px',
                 desktop: '1440px',
             },
             // letterSpacing: {
