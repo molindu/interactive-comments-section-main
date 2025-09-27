@@ -8,8 +8,18 @@
 }
 
 body {
-    /*width: 100svw;*/
-    /*height: 100svh;*/
-    /*font-size: 16px;*/
-    /*overflow-x: hidden;*/
+    background-color: hsl(228, 33%, 97%);
+    box-sizing: border-box;
+    padding: 3%;
+    overflow-x: hidden;
+}
+
+@layer components {
+    .main {
+        @apply flex items-center justify-center;
+    }
+
+    .container {
+        @apply max-w-3xl h-auto flex flex-col gap-4;
+    }
 }
