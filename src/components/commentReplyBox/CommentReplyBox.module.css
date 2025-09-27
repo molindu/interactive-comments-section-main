@@ -1,0 +1,107 @@
+/*container*/
+.container {
+    @apply gap-2 p-4
+    grid grid-rows-[15%_1fr_auto] grid-cols-[10%_1fr_1fr]
+    mobile:grid-rows-[28%_1fr] mobile:grid-cols-[10%_8%_1fr_28%]
+    tablet:gap-3 tablet:grid-cols-[10%_5%_1fr_1fr]
+}
+
+/*1*/
+.vote_container {
+    @apply flex items-start
+    row-start-3 row-end-4 col-start-1 col-end-3
+    mobile:row-start-1 mobile:row-end-3 mobile:col-start-1 mobile:col-end-2 mobile:justify-center
+}
+
+.vote_box {
+    @apply flex p-2 items-center justify-center w-24 rounded-lg font-semibold text-Purple-600 bg-Grey-100
+    mobile:flex-col mobile:w-8 gap-4 mobile:gap-3 mobile:text-xxs
+    tablet:text-base
+}
+
+/*2*/
+.avatar {
+    @apply row-start-1 row-end-2 col-start-1 col-end-2
+    mobile:row-start-1 mobile:row-end-2 mobile:col-start-2 mobile:col-end-3
+}
+
+.avatar_img {
+    @apply w-8 h-8
+    mobile:w-6 mobile:h-6
+    tablet:w-8 tablet:h-8
+}
+
+/*3*/
+.username_container {
+    @apply row-start-1 row-end-2 col-start-2 col-end-4 flex items-center justify-start
+    mobile:row-start-1 mobile:row-end-2 mobile:col-start-3 mobile:col-end-4 mobile:text-xxs
+    tablet:text-base gap-3
+}
+
+.username {
+    @apply font-bold text-Grey-800;
+}
+
+.timeAgo {
+    @apply text-Grey-500 mobile:text-xxs tablet:text-base;
+}
+
+/*4*/
+.reply_container {
+    @apply row-start-3 row-end-4 col-start-3 col-end-4 flex justify-end items-center
+    mobile:row-start-1 mobile:row-end-2 mobile:col-start-4 mobile:col-end-5
+}
+
+.reply_btn {
+    @apply text-Purple-600 hover:text-Purple-200 flex justify-center items-center p-2 self-end font-semibold cursor-pointer h-full gap-1.5
+    mobile:text-xxs
+    tablet:gap-2 tablet:text-base
+}
+
+.delete_btn {
+    @apply text-Pink-400 hover:text-Pink-200 flex justify-center items-center p-2 self-end font-semibold gap-1.5 cursor-pointer h-full
+    mobile:text-xxs
+    tablet:text-base tablet:gap-2
+}
+
+.edit_btn {
+    @apply text-Purple-600 hover:text-Purple-200 flex justify-center items-center p-2 self-end font-semibold cursor-pointer h-full gap-1.5
+    mobile:text-xxs
+    tablet:text-base tablet:gap-2
+}
+
+.update_btn {
+    @apply text-White flex justify-center items-center p-2 px-6 self-end font-normal text-xxs gap-1.5 cursor-pointer bg-Purple-600 rounded-md hover:bg-Purple-200
+    mobile:text-xxs mobile:px-4 mobile:p-1
+    tablet:text-xs tablet:px-6 tablet:p-2
+}
+
+/*5*/
+.comment_text {
+    @apply flex text-Grey-500
+    row-start-2 row-end-3 col-start-1 col-end-4
+    mobile:row-start-2 mobile:row-end-3 mobile:col-start-2 mobile:col-end-5 mobile:text-xxs
+    tablet:text-base
+}
+
+.comment_text textarea {
+    @apply px-4 py-2 border border-Grey-100 text-Grey-800 rounded-md transition-colors outline-none w-full h-full
+    mobile:text-xxs
+    tablet:text-base;
+}
+
+.comment_text textarea:focus {
+    @apply border-Purple-600;
+}
+
+.mention {
+    @apply text-base mobile:text-xxs tablet:text-base text-Purple-600 font-semibold;
+}
+
+.active {
+    @apply mobile:text-xxxs tablet:text-xs text-White bg-Purple-600 px-1 rounded-sm;
+}
+
+.edit_delete {
+    @apply flex items-center justify-center h-full;
+}

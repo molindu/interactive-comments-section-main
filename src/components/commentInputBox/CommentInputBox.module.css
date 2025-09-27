@@ -1,0 +1,45 @@
+/*container*/
+.container {
+    @apply gap-4 p-4 rounded-lg bg-White
+    grid grid-rows-[1fr_auto] grid-cols-[1fr_1fr]
+    mobile:grid-rows-[1fr] mobile:grid-cols-[auto_1fr_auto] mobile:gap-2 mobile:p-4
+}
+
+/*1*/
+.avatar {
+    @apply row-start-2 row-end-3 col-start-1 col-end-2
+    mobile:row-start-1 mobile:row-end-2 mobile:col-start-1 mobile:col-end-2
+}
+
+.avatar_img {
+    @apply w-8 h-8 mobile:w-8 mobile:h-8;
+}
+
+/*2*/
+.reply_container {
+    @apply flex justify-end items-center
+    row-start-2 row-end-3 col-start-2 col-end-3
+    mobile:self-start mobile:row-start-1 mobile:row-end-2 mobile:col-start-3 mobile:col-end-4
+}
+
+.reply_btn {
+    @apply text-White flex justify-center items-center p-2 px-6 self-end font-normal text-xxs gap-1.5 cursor-pointer bg-Purple-600 rounded-md hover:bg-Purple-200
+    mobile:text-xxs mobile:px-4 mobile:p-1
+    tablet:text-xs tablet:px-6 tablet:p-2
+}
+
+/*3*/
+.comment_text {
+    @apply row-start-1 row-end-2 col-start-1 col-end-3
+    mobile:row-start-1 mobile:row-end-2 mobile:col-start-2 mobile:col-end-3 mobile:text-xxs
+    tablet:text-base
+
+}
+
+.comment_text textarea {
+    @apply px-4 py-2 border border-Grey-100 text-Grey-800 rounded-md transition-colors outline-none w-full h-full;
+}
+
+.comment_text textarea:focus {
+    @apply border-Purple-600;
+}
